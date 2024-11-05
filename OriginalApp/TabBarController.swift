@@ -22,6 +22,12 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        if Auth.auth().currentUser != nil {
+            // ログインしていないときの処理
+            let user = Auth.auth().currentUser
+            print("test:::::::::::::", user!)
+        }
+        
 //        if Auth.auth().currentUser == nil && isCreateAccount {
 //            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "CreateAccount")
 //            loginViewController!.modalPresentationStyle = .overFullScreen
