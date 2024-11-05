@@ -16,33 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gYY-zn-4NR">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="gYY-zn-4NR">
                                 <rect key="frame" x="80" y="139" width="233" height="279"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="46A-Ul-xEb">
-                                        <rect key="frame" x="0.0" y="0.0" width="233" height="39.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="46.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANV-VS-Rnz">
-                                        <rect key="frame" x="0.0" y="79.666666666666657" width="233" height="40"/>
+                                        <rect key="frame" x="0.0" y="116.33333333333333" width="233" height="46.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcJ-Nb-NkC">
-                                        <rect key="frame" x="0.0" y="159.66666666666669" width="233" height="39.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="232.66666666666669" width="233" height="46.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="ログイン"/>
                                         <connections>
                                             <action selector="handleLoginButton:" destination="VrF-Hf-ZZk" eventType="touchUpInside" id="nam-BK-SL9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T6-Fq-iML">
-                                        <rect key="frame" x="0.0" y="239.33333333333329" width="233" height="39.666666666666657"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="アカウントを作成"/>
-                                        <connections>
-                                            <action selector="handleCreateAccountButton:" destination="VrF-Hf-ZZk" eventType="touchUpInside" id="5y3-CZ-9I9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -66,48 +58,6 @@
             </objects>
             <point key="canvasLocation" x="836" y="-35"/>
         </scene>
-        <!--Create Account-->
-        <scene sceneID="tL3-9M-5U2">
-            <objects>
-                <viewController storyboardIdentifier="CreateAccount" id="7xD-Vd-fpg" customClass="CreateAccount" customModule="OriginalApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T46-Hp-Flp">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Jqe-mC-MKc">
-                                <rect key="frame" x="50" y="159" width="293" height="183"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iGG-Wt-3t8">
-                                        <rect key="frame" x="0.0" y="0.0" width="293" height="34.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEM-Jm-UVO">
-                                        <rect key="frame" x="0.0" y="74.333333333333343" width="293" height="34.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq6-Sb-tMi">
-                                        <rect key="frame" x="0.0" y="148.66666666666669" width="293" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="アカウントを作成"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="9Un-i8-i7S"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Jqe-mC-MKc" firstAttribute="top" secondItem="9Un-i8-i7S" secondAttribute="top" constant="100" id="5wx-J0-0AH"/>
-                            <constraint firstItem="9Un-i8-i7S" firstAttribute="trailing" secondItem="Jqe-mC-MKc" secondAttribute="trailing" constant="50" id="wd2-zI-y0R"/>
-                            <constraint firstItem="Jqe-mC-MKc" firstAttribute="leading" secondItem="9Un-i8-i7S" secondAttribute="leading" constant="50" id="y67-5E-Skk"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xp9-MX-MAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1607" y="-35"/>
-        </scene>
         <!--ホーム-->
         <scene sceneID="Jd1-ho-lGJ">
             <objects>
@@ -115,14 +65,30 @@
                     <view key="view" contentMode="scaleToFill" id="idx-dC-lzB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ホーム画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sa-ao-2D9">
+                                <rect key="frame" x="96.666666666666686" y="401" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ita-rS-7Mk"/>
+                                    <constraint firstAttribute="height" constant="50" id="MPf-Dr-lk4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NYo-AP-PUY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2sa-ao-2D9" firstAttribute="centerY" secondItem="idx-dC-lzB" secondAttribute="centerY" id="QxG-wW-R0R"/>
+                            <constraint firstItem="2sa-ao-2D9" firstAttribute="centerX" secondItem="idx-dC-lzB" secondAttribute="centerX" id="eBV-nc-n7X"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ホーム" image="house" catalog="system" id="FSn-kZ-dvi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGW-E3-qid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784" y="727"/>
+            <point key="canvasLocation" x="783.96946564885491" y="726.76056338028172"/>
         </scene>
         <!--設定-->
         <scene sceneID="DhU-MG-Hxl">
@@ -131,8 +97,24 @@
                     <view key="view" contentMode="scaleToFill" id="dVx-s6-NcY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gM-g8-MOz">
+                                <rect key="frame" x="96.666666666666686" y="401" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3nt-f3-cNU"/>
+                                    <constraint firstAttribute="height" constant="50" id="eUR-LC-u6v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ata-8c-bNw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5gM-g8-MOz" firstAttribute="centerX" secondItem="dVx-s6-NcY" secondAttribute="centerX" id="MbF-2k-yUq"/>
+                            <constraint firstItem="5gM-g8-MOz" firstAttribute="centerY" secondItem="dVx-s6-NcY" secondAttribute="centerY" id="U6x-x0-5fb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="設定" image="gearshape" catalog="system" id="Skr-CM-Klk"/>
                 </viewController>
